@@ -1,0 +1,27 @@
+ <!--Introduction-->
+ <section id="about" class="introduction scrollto">
+
+    <div class="row clearfix">
+
+        <div class="col-3">
+            <div class="section-heading">
+                <h3>{{intro.introheading}}</h3>
+                <h2 class="section-title">{{intro.intrologo}}</h2>
+                <p class="section-subtitle">{{intro.introdescription}}</p>
+            </div>
+
+        </div>
+
+        <div class="col-2-3" >
+                <div class="col-2 icon-block icon-top wow fadeInUp" data-wow-delay="0.1s" *ngFor = "let childofIntroduction  of intro.introblock">
+
+               <app-intro-block [introblock] = "childofIntroduction"></app-intro-block>
+
+        </div>
+        </div>
+
+    </div>
+
+
+</section>
+<!--End of Introduction-->

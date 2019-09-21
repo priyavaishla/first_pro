@@ -1,0 +1,24 @@
+
+
+  <div class="row clearfix   scrollto text-center"> 
+
+      <div class="section-heading">
+          <h3>{{detailedBlog.detailedBlog.heading}}</h3>
+          <h2 class="section-title">{{detailedBlog.detailedBlog.status}}</h2>
+      </div>
+
+      <!--User Testimonial-->
+      <div>
+      <blockquote class="col-3 testimonial classic">
+        <img src="../assets/images/user-images/{{getcustomer.image}}" alt="User"/>
+        <q>{{getcustomer.description}}</q>
+        <footer>{{getcustomer.footer}}</footer>
+        <button class="button" (click) = "getback()">Back</button>
+      </blockquote>
+      <!-- End of Testimonial-->
+    </div>
+      
+
+  </div>
+
+
